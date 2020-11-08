@@ -1,0 +1,53 @@
+.paddingXS {
+  padding: 2px;
+}
+
+.paddingS {
+  padding: 5px;
+}
+
+.paddingM {
+  padding: 10px;
+}
+
+.paddingL {
+  padding: 15px;
+}
+.paddingXL {
+  padding: 25px;
+}
+
+.marginXS {
+  margin: 2px;
+}
+
+.marginS {
+  margin: 5px;
+}
+
+.marginM {
+  margin: 10px;
+}
+
+.marginL {
+  margin: 15px;
+}
+.marginXL {
+  margin: 25px;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexStretch {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.w100 {
+  width: 100%;
+}

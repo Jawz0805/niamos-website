@@ -1,0 +1,10 @@
+.nav-container {
+  top: 0;
+  height: 5em;
+  width: 100%;
+  display: flex;
+
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1000;
+}
