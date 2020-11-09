@@ -1,10 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const NavItem = ({ item }) => {
+const NavItem = ({ name, path }) => {
   return (
     <li className="paddingS roboto regular marginXL textS">
-      <NavLink to={item}>{item}</NavLink>
+      <NavLink to={path}>{name}</NavLink>
     </li>
   );
 };

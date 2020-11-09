@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import PageWrapper from "../../Containers/PageWrapper/PageWrapper";
+
 import getData from "../../Utilities/getData";
 import HomeNav from "./HomeNav";
 import "./HomePage.scss";
@@ -25,7 +25,7 @@ const HomePage = () => {
   };
 
   return (
-    <PageWrapper>
+    <div className="home-page-container">
       {pageData && (
         <HomeNav
           items={pageData.homePageSlide}
@@ -40,7 +40,7 @@ const HomePage = () => {
           handleSlideScroll={handleSlideScroll}
         ></UseWheelGesture>
       )}
-    </PageWrapper>
+    </div>
   );
 };
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const HeadingLetters = ({ heading, controls, ref }) => {
+const HeadingLetters = ({ heading, controls, ref, styleName }) => {
   const [string, setString] = useState("");
 
   useEffect(() => {
@@ -34,7 +34,7 @@ const HeadingLetters = ({ heading, controls, ref }) => {
   };
   return (
     <AnimatePresence>
-      <div className="slide-title">
+      <div className={`${styleName}`}>
         {string && (
           <motion.div
             variants={containerVariants}

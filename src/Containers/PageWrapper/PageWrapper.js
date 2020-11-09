@@ -1,7 +1,8 @@
 import React from "react";
+import "./PageWrapper.scss";
 
 const PageWrapper = ({ children }) => {
-  return <div>{children}</div>;
+  return <div className="page-wrapper">{children}</div>;
 };
 
 export default PageWrapper;

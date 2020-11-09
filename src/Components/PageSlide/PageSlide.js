@@ -13,9 +13,16 @@ const PageSlide = ({ slide, index }) => {
     >
       {slide && (
         <HeadingLetters
-          className="slide-title"
+          styleName="slide-title"
           heading={slide.title}
           key={slide.title}
+        />
+      )}
+      {slide.subTitle && (
+        <HeadingLetters
+          styleName="slide-sub-title"
+          key={slide.subTitle}
+          heading={slide.subTitle}
         />
       )}
       <AnimateText key={slide.description}>

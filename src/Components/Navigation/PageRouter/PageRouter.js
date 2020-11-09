@@ -2,6 +2,7 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import HomePage from "../../../Pages/HomePage/HomePage";
 import About from "../../../Pages/About/About";
+import WhatsOn from "../../../Pages/WhatsOn/WhatsOn";
 
 const PageRouter = () => {
   return (
@@ -14,6 +15,9 @@ const PageRouter = () => {
       </Route>
       <Route path="/about">
         <About />
+      </Route>
+      <Route path="/whatson">
+        <WhatsOn />
       </Route>
     </Switch>
   );

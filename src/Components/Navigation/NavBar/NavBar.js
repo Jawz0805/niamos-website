@@ -3,7 +3,6 @@ import NavItem from "../NavItem/NavItem";
 import Socials from "../Socials/Socials";
 import "./NavBar.scss";
 import Logo from "../../../Assets/Images/NiamosPurple.png";
-import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -11,13 +10,13 @@ const NavBar = () => {
       <img src={Logo} height="100%" alt="Niamos" style={{ padding: "10px" }} />
 
       <ul className="flexStretch roboto paddingL">
-        <NavItem item="Home" />
-        <NavItem item="About" />
-        <NavItem item="What's On" />
-        <NavItem item="Projects" />
-        <NavItem item="Community" />
-        <NavItem item="Hire" />
-        <NavItem item="Contact" />
+        <NavItem name="Home" path="/home" />
+        <NavItem name="About" path="/about" />
+        <NavItem name="What's On" path="whatson" />
+        <NavItem name="Projects" path="projects" />
+        <NavItem name="Community" path="community" />
+        <NavItem name="Hire" path="hire" />
+        <NavItem name="Contact" path="contact" />
       </ul>
       <div style={{ position: "absolute", right: 0 }}>
         <Socials
