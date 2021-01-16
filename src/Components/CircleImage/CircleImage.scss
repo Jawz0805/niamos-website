@@ -1,0 +1,22 @@
+.circle-image {
+  border-radius: 50%;
+  width: 60vh;
+  height: 60vh;
+
+  position: absolute;
+}
+
+.circle-container {
+  border-radius: 50%;
+  width: 60vh;
+  height: 60vh;
+  margin-top: calc(25vh);
+  margin-left: -35%;
+  background-color: rgb(22, 22, 22);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgb(22, 22, 22);
+
+  position: absolute;
+}

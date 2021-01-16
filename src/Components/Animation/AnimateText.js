@@ -2,8 +2,8 @@ import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const textVariants = {
-  before: { opacity: 0, transition: { staggerChildren: 0.2, duration: 2 } },
-  after: { opacity: 1, transition: { staggerChildren: 0.2, duration: 2 } },
+  before: { opacity: 0, transition: { staggerChildren: 0.1, duration: 1 } },
+  after: { opacity: 1, transition: { staggerChildren: 0.1, duration: 1 } },
 };
 const AnimateText = (props) => {
   return (

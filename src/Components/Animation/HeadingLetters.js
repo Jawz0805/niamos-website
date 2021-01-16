@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const HeadingLetters = ({ heading, controls, ref, styleName }) => {
+const HeadingLetters = ({ heading, controls, ref, styleName, textColor }) => {
   const [string, setString] = useState("");
 
   useEffect(() => {
@@ -54,9 +54,8 @@ const HeadingLetters = ({ heading, controls, ref, styleName }) => {
                 key={index}
                 className="roboto textL"
                 width={"100%"}
-                style={{ position: "relative" }}
+                style={{ position: "relative", color: textColor }}
                 variants={letterVariants}
-                style={{ color: "rgba(15,15,40)" }}
               >
                 {letter === " " ? "\u00A0" : letter}
               </motion.span>

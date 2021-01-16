@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe, faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
+import "./Socials.scss";
 
 const Socials = ({
   facebook,
@@ -18,11 +19,16 @@ const Socials = ({
   eMail,
   direction,
   color,
+  flex,
 }) => {
   return (
-    <ul className="flexCenter">
+    <ul className="socials-list" style={{ justifyContent: flex }}>
       {facebook && (
-        <motion.li className="paddingM" whileHover={{ scale: 1.1 }}>
+        <motion.li
+          className="socials-item"
+          whileHover={{ scale: 1.1 }}
+          style={{ color: color }}
+        >
           <a href={facebook} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon
               icon={faFacebookSquare}
@@ -33,7 +39,11 @@ const Socials = ({
         </motion.li>
       )}
       {instagram && (
-        <motion.li className="paddingM" whileHover={{ scale: 1.1 }}>
+        <motion.li
+          className="socials-item"
+          whileHover={{ scale: 1.1 }}
+          style={{ color: color }}
+        >
           <a href={instagram} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon
               icon={faInstagramSquare}
@@ -44,7 +54,11 @@ const Socials = ({
         </motion.li>
       )}
       {youtube && (
-        <motion.li className="paddingM" whileHover={{ scale: 1.1 }}>
+        <motion.li
+          className="socials-item"
+          whileHover={{ scale: 1.1 }}
+          style={{ color: color }}
+        >
           <a href={youtube} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon
               icon={faYoutubeSquare}
@@ -55,7 +69,11 @@ const Socials = ({
         </motion.li>
       )}
       {twitter && (
-        <motion.li className="paddingM" whileHover={{ scale: 1.1 }}>
+        <motion.li
+          className="socials-item"
+          whileHover={{ scale: 1.1 }}
+          style={{ color: color }}
+        >
           <a href={twitter} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon
               icon={faTwitterSquare}
@@ -66,7 +84,11 @@ const Socials = ({
         </motion.li>
       )}
       {website && (
-        <motion.li className="paddingM" whileHover={{ scale: 1.1 }}>
+        <motion.li
+          className="socials-item"
+          whileHover={{ scale: 1.1 }}
+          style={{ color: color }}
+        >
           <a href={website} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon
               icon={faGlobe}
@@ -77,7 +99,11 @@ const Socials = ({
         </motion.li>
       )}
       {eMail && (
-        <motion.li className="paddingM" whileHover={{ scale: 1.1 }}>
+        <motion.li
+          className="socials-item"
+          whileHover={{ scale: 1.1 }}
+          style={{ color: color }}
+        >
           <a href={`mailto:${eMail}`} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon
               icon={faEnvelopeSquare}

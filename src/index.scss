@@ -1,1 +1,50 @@
 @import "./Styles/GlobalVariables.scss";
+
+body {
+  background-color: #0f1923;
+
+  color: #fef6e0;
+}
+
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.page-inner-wrapper {
+  margin: 10%;
+}
+
+.markdown-white {
+  p {
+    color: #fef6e0;
+    transition: 500ms;
+  }
+  h1 {
+    color: #fef6e0;
+    text-align: center;
+  }
+  h2 {
+    color: #fef6e0;
+    text-align: center;
+  }
+}
+
+.markdown {
+  p {
+    color: #0f1923;
+    transition: 500ms;
+  }
+  h1 {
+    color: #0f1923;
+    text-align: center;
+  }
+  h2 {
+    color: #0f1923;
+    text-align: center;
+  }
+}
+
+.offWhite {
+  color: #fef6e0;
+}

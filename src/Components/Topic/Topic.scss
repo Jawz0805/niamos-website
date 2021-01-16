@@ -1,0 +1,44 @@
+.topic-container {
+  width: 100%;
+  display: flex;
+  border: 1px solid white;
+  overflow: hidden;
+}
+
+.topic-image {
+  width: 100%;
+  height: auto;
+}
+
+.topic-grid {
+  margin-top: 2em;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(300px, auto);
+  column-gap: 1em;
+  row-gap: 2em;
+}
+
+.flex-right {
+  flex-direction: row;
+}
+
+.flex-left {
+  flex-direction: row-reverse;
+}
+
+.topic-text-container {
+  width: 50%;
+  padding: 0 20px 0 20px;
+}
+
+.topic-image-container {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,67 @@
+.paddingXS {
+  padding: 2px;
+}
+
+.paddingS {
+  padding: 5px;
+}
+
+.paddingM {
+  padding: 10px;
+}
+
+.paddingL {
+  padding: 15px;
+}
+
+.paddingXL {
+  padding: 25px;
+}
+
+.marginXS {
+  margin: 2px;
+}
+
+.marginS {
+  margin: 5px;
+}
+
+.marginM {
+  margin: 10px;
+}
+
+.marginL {
+  margin: 15px;
+}
+
+.marginXL {
+  margin: 25px;
+}
+
+.flexCenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flexStretch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.w100 {
+  width: 100%;
+}
+/*# sourceMappingURL=Spacing.css.map */

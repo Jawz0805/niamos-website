@@ -2,6 +2,8 @@
   height: 100vh;
   width: 90vw;
   margin-right: 30vw;
+  scroll-snap-align: start;
+  overflow: none;
 }
 
 .slide-title {
@@ -12,21 +14,10 @@
 
 .slide-paragraph {
   padding: 5% 15%;
-  color: black;
-  width: 60%;
+
+  width: 40%;
 }
 .slide-sub-title {
   padding: 2.5% 0 0 12.5%;
-  color: black;
   width: 60%;
-}
-
-.container-right {
-  width: 25vw;
-  height: 100vh;
-  background-color: rgb(22, 22, 22);
-  top: 0;
-  float: right;
-  right: 0;
-  position: fixed;
 }

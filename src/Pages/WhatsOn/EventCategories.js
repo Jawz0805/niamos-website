@@ -1,14 +1,16 @@
 import React from "react";
+import Button from "../../Components/Button";
 
 const EventCategories = ({ item, setFilter }) => {
   return (
-    <button
+    <Button
       onClick={() => {
-        setFilter(item.title);
+        setFilter(item);
       }}
+      text={item}
     >
-      {item.title}
-    </button>
+      {item}
+    </Button>
   );
 };
 

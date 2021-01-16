@@ -1,10 +1,74 @@
 .nav-container {
   top: 0;
-  height: 5em;
-  width: 100%;
-  display: flex;
-
+  width: 100vw;
+  height: 5vh;
+  color: #0f1923;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #fef6e0;
   z-index: 1000;
+  transition: 300ms;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-row {
+  height: 5vh;
+  width: 100%;
+}
+
+.nav-second-grid {
+  height: 5vh;
+  display: grid;
+
+  gap: 0px 0px;
+}
+
+.nav-flex {
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  gap: 0px 0px;
+  div {
+    justify-content: center;
+  }
+  padding-right: 10px;
+}
+.nav-second-row {
+  margin-top: 5vh;
+  height: 8vh;
+  width: 100%;
+}
+.grid-5 {
+  div {
+    padding-bottom: 5px;
+    transition: 500ms;
+    justify-content: flex-start;
+    padding-left: 30%;
+  }
+}
+.nav-items {
+  display: flex;
+  justify-content: flex-end;
+  right: 0;
+}
+.nav-grid-item {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.socials {
+  display: flex;
+}
+
+.nav-sub-item {
+  font-weight: 400;
+  padding-bottom: 5px;
+  font-size: large;
+}
+
+.nav-sub-menu {
+  position: absolute;
+  top: 6vh;
+  margin-left: 45px;
 }

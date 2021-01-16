@@ -2,12 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./HomePage.scss";
 
-const HomeNav = ({ items, handleSlideChange, index }) => {
+const HomeNav = ({ items, handleSlideChange, inView }) => {
   return (
     <ul className="home-nav">
       {items &&
         items.map((item, i) => {
-          const className = index === i ? "dot-active" : "dot";
+          const className = inView === i ? "dot-active" : "dot";
 
           return (
             <li key={item.id}>

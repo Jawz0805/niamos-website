@@ -1,31 +1,36 @@
 import React from "react";
 import Moment from "react-moment";
 
-const EventRow = ({ event }) => {
+const EventRow = ({ event, backgroundColour }) => {
   const soldOut = event.soldOut === true ? "soldOut" : "";
   return (
-    <ul className="events-grid-row roboto">
-      <li className="event-row-item">{event.title}</li>
-      <li className="event-row-item">{event.venue}</li>
-      <li className="event-row-item">
-        <Moment format="DD - MMMM">{event.date}</Moment>
+    <ul
+      className="events-grid-row roboto "
+      style={{ backgroundColor: backgroundColour }}
+    >
+      <li className="event-row-item row-item">{event.event}</li>
+      <li className="event-row-item row-item">{event.venue}</li>
+      <li className="event-row-item row-item">
+        <Moment format="DD - MMMM" row-item>
+          {event.date}
+        </Moment>
       </li>
-      <li className="event-row-item">{event.time.substring(0, 5)}</li>
-      <li className="event-row-item">{event.event}</li>
-      <li className="event-row-item">£{event.price}</li>
+      <li className="event-row-item row-item">{event.time.substring(0, 5)}</li>
 
-      <li className={`event-row-item ${soldOut} ticket`}>
+      <li className="event-row-item row-item">£{event.price}</li>
+
+      <li className={`event-row-item row-item`}>
         {!event.soldOut ? (
           <a
             href={event.ticketLink}
             target="_blank"
             rel="noreferrer"
-            className="ticket-link"
+            className="ticket-link ticket"
           >
-            Tickets
+            Get Tickets
           </a>
         ) : (
-          <span className={`${soldOut}`}>Sold Out</span>
+          <span className={` ticket-link ticket ${soldOut}`}>Sold Out</span>
         )}
       </li>
     </ul>
