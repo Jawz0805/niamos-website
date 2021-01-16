@@ -6,7 +6,7 @@ import "./HomePage.scss";
 import PageSlide from "../../Components/PageSlide/PageSlide";
 import CircleImage from "../../Components/CircleImage/CircleImage";
 import PageWrapper from "../../Containers/PageWrapper/PageWrapper";
-import { backgroundColours } from "../../Components/Styles/Colors";
+import { backgroundColours } from "../../Styles/Colors";
 
 const HomePage = () => {
   const [pageData, setPageData] = useState();
