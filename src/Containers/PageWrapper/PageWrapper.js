@@ -1,5 +1,5 @@
 import React from "react";
-import "./PageWrapper.scss";
+import "./_PageWrapper.scss";
 import { motion, AnimatePresence } from "framer-motion";
 
 const pageVariants = {

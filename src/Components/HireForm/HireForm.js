@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import postData from "../../Utilities/postData";
-import "./Form.scss";
+import "./_Form.scss";
 
 const HireForm = () => {
   const { register, handleSubmit } = useForm();

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
-import "./PageSlide.scss";
+import "./_PageSlide.scss";
 import { backgroundColours } from "../../Styles/Colors";
 import HeadingLetters from "../Animation/HeadingLetters";
 import { useInView } from "react-intersection-observer";

@@ -8,7 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe, faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
-import "./Socials.scss";
+import "./_Socials.scss";
 
 const Socials = ({
   facebook,

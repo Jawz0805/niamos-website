@@ -1,7 +1,8 @@
-import NavBar from "../Navigation/NavBar/NavBar";
-import PageRouter from "../Navigation/PageRouter/PageRouter";
+import NavBar from "../Components/Navigation/NavBar/NavBar";
+import PageRouter from "../Components/Navigation/PageRouter/PageRouter";
 import { BrowserRouter as Router } from "react-router-dom";
-import Footer from "../../Containers/Footer";
+import "./App.scss";
+import Footer from "../Containers/Footer";
 function App() {
   return (
     <div className="App">

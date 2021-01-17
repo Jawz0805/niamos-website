@@ -1,5 +1,5 @@
 import React from "react";
-import "./CircleImage.scss";
+import "./_CircleImage.scss";
 import { motion, AnimatePresence } from "framer-motion";
 
 const CircleImage = ({ source, offset }) => {

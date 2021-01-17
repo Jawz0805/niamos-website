@@ -1,5 +1,5 @@
 import React from "react";
-import "./Button.scss";
+import "./_Button.scss";
 import { motion } from "framer-motion";
 
 const Button = ({ text, link, color, onClick }) => {

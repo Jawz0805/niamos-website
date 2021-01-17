@@ -1,7 +1,7 @@
 import React from "react";
-import "./footer.scss";
+import "./_Footer.scss";
 import FooterNav from "./FooterNav";
-import Socials from "../../Components/Navigation/Socials/Socials";
+import Socials from "../../Components/Socials/Socials";
 import FooterNavItem from "./FooterNavItem";
 import Button from "../../Components/Button";
 

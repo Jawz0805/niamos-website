@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NavItem from "../NavItem/NavItem";
-import Socials from "../Socials/Socials";
-import "./NavBar.scss";
+import Socials from "../../Socials/Socials";
+import "./_NavBar.scss";
 import Logo from "../../../Assets/Images/NiamosPurple.png";
 import NavSubItem from "../NavItem/NavSubItem";
 
