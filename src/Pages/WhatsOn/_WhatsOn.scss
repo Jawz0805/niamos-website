@@ -33,15 +33,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  background-color: #4b7f52;
   width: 100%;
   height: 100%;
 }
 
 .soldOut {
+  width: 100%;
   text-decoration: line-through;
-  background-color: #d51c29;
 }
 
 .white p {

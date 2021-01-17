@@ -1,6 +1,8 @@
-$base: #0f1923;
-$white: #f9f9f9;
-$pink: #d51c29;
+@import "../../Styles/Colors";
+
+$base: $black;
+$white: $white;
+$pink: $highlight;
 $height: 54px;
 $transition: 0.3s ease-out all;
 

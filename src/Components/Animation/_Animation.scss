@@ -1,0 +1,21 @@
+@import "../../Styles/Colors";
+
+.page-heading-container {
+  letter-spacing: 0em;
+  display: flex;
+  width: 42%;
+  transform: skew(20deg, -3deg);
+  margin-bottom: 60px;
+  color: $secondary;
+  text-shadow: 3px 3px $white;
+  justify-content: center;
+  border-top: 5px solid $secondary;
+  border-bottom: 5px solid $secondary;
+}
+
+.page-heading-letters {
+  position: relative;
+  color: $secondary;
+  font-size: 100px;
+  transform: skewX(20deg) skewY(0);
+}

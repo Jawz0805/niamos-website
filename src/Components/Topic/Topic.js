@@ -1,7 +1,7 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
 import ReactPlayer from "react-player";
-import "./Topic.scss";
+import "./_Topic.scss";
 
 const Topic = ({ page }) => {
   return (

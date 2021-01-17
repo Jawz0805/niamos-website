@@ -1,22 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
 import NavItem from "../NavItem/NavItem";
 import Socials from "../../Socials/Socials";
 import "./_NavBar.scss";
 import Logo from "../../../Assets/Images/NiamosPurple.png";
-import NavSubItem from "../NavItem/NavSubItem";
+// import NavSubItem from "../NavItem/NavSubItem";
 
 const NavBar = () => {
-  const [visible, setVisible] = useState(false);
-  const [height, setHeight] = useState("7vh");
+  // const [visible, setVisible] = useState(false);
+  // const [height, setHeight] = useState("7vh");
+  const height = "7vh";
 
-  const onMouseOver = () => {
-    setVisible(true);
-    setHeight("18vh");
-  };
-  const onMouseOut = () => {
-    setVisible(false);
-    setHeight("7vh");
-  };
+  // const onMouseOver = () => {
+  //   setVisible(true);
+  //   setHeight("18vh");
+  // };
+  // const onMouseOut = () => {
+  //   setVisible(false);
+  //   setHeight("7vh");
+  // };
   return (
     <div
       className="nav-container"
@@ -57,7 +58,6 @@ const NavBar = () => {
             facebook="http://www.facebook.com/niaboxoffice"
             instagram="https://www.instagram.com/niamos_mcr/"
             eMail="niamosideas@gmail.com"
-            color="#0f1923"
           />
         </div>
       </ul>

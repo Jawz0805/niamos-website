@@ -91,6 +91,54 @@ body {
   font-weight: 100;
 }
 
+.bg-white {
+  background-color: #f5f5f5;
+}
+
+.white {
+  color: #f5f5f5;
+}
+
+.bg-black {
+  background-color: #0f1923;
+}
+
+.black {
+  color: #0f1923;
+}
+
+.bg-primary {
+  background-color: #352665;
+}
+
+.primary {
+  color: #352665;
+}
+
+.bg-secondary {
+  background-color: #06bcc1;
+}
+
+.secondary {
+  color: #06bcc1;
+}
+
+.bg-tertiary {
+  background-color: #80727b;
+}
+
+.tertiary {
+  color: #80727b;
+}
+
+.bg-highlight {
+  background-color: #fe9000;
+}
+
+.highlight {
+  color: #fe9000;
+}
+
 .paddingXS {
   padding: 2px;
 }
@@ -131,19 +179,7 @@ body {
   margin: 25px;
 }
 
-.flexCenter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.flexStretch {
+.flex-stretch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,7 +194,7 @@ body {
   width: 100%;
 }
 
-.center-div {
+.flex-center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,47 +215,53 @@ ul {
   padding: 0;
 }
 
-.bg-black {
+body {
   background-color: #0f1923;
+  color: #f5f5f5;
 }
 
-.bg-white {
-  background-color: #f9f9f9;
+html {
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-.bg-red {
-  background-color: #ff4655;
+.page-inner-wrapper {
+  margin: 10%;
 }
 
-.bg-blue {
-  background-color: #3a7ca5;
+.markdown-white p {
+  color: #f5f5f5;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
-.bg-yellow {
-  background-color: #ffe45e;
+.markdown-white h1 {
+  color: #f5f5f5;
+  text-align: center;
 }
 
-.black {
+.markdown-white h2 {
+  color: #f5f5f5;
+  text-align: center;
+}
+
+.markdown p {
   color: #0f1923;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
-.white {
-  color: #f9f9f9;
+.markdown h1 {
+  color: #0f1923;
+  text-align: center;
 }
 
-.red {
-  color: #ff4655;
+.markdown h2 {
+  color: #0f1923;
+  text-align: center;
 }
 
-.blue {
-  color: #3a7ca5;
+.offWhite {
+  color: white;
 }
-
-.yellow {
-  color: #ffe45e;
-}
-
-p {
-  color: none;
-}
-/*# sourceMappingURL=GlobalVariables.css.map */
+/*# sourceMappingURL=App.css.map */

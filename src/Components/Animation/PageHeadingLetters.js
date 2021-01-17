@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import "./_Animation.scss";
 
 const HeadingLetters = ({ heading, controls, ref, styleName, color }) => {
   const [string, setString] = useState("");
@@ -39,7 +40,6 @@ const HeadingLetters = ({ heading, controls, ref, styleName, color }) => {
   return (
     <AnimatePresence>
       <div
-        className={`${styleName}`}
         style={{
           display: "flex",
           justifyContent: "center",
@@ -53,29 +53,14 @@ const HeadingLetters = ({ heading, controls, ref, styleName, color }) => {
             exit="hidden"
             background={""}
             ref={ref}
-            style={{
-              letterSpacing: "0em",
-              display: "flex",
-              width: "42%",
-              skewX: "20deg",
-              skewY: "-3deg",
-              marginBottom: "60px",
-
-              textShadow: "3px 3px #5F0A87",
-              justifyContent: "center",
-              borderTop: "5px solid #5F0A87",
-              borderBottom: "5px solid #5F0A87",
-            }}
+            className="page-heading-container"
           >
             {string.map((letter, index) => (
               <motion.span
                 key={index}
-                className="roboto bold"
+                className="roboto bold page-heading-letters"
                 width={"100%"}
                 style={{
-                  position: "relative",
-                  color: color,
-                  fontSize: "100px",
                   skewX: "-20deg",
                 }}
                 variants={letterVariants}

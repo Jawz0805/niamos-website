@@ -1,12 +1,12 @@
-@import "../Styles/GlobalVariables.scss";
+@import "../Styles/_GlobalVariables.scss";
 
 body {
-  background-color: #0f1923;
-  color: #fef6e0;
+  background-color: $black;
+  color: $white;
 }
 
 html {
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 
@@ -16,34 +16,34 @@ html {
 
 .markdown-white {
   p {
-    color: #fef6e0;
+    color: $white;
     transition: 500ms;
   }
   h1 {
-    color: #fef6e0;
+    color: $white;
     text-align: center;
   }
   h2 {
-    color: #fef6e0;
+    color: $white;
     text-align: center;
   }
 }
 
-.markdown-black {
+.markdown {
   p {
-    color: #0f1923;
+    color: $black;
     transition: 500ms;
   }
   h1 {
-    color: #0f1923;
+    color: $black;
     text-align: center;
   }
   h2 {
-    color: #0f1923;
+    color: $black;
     text-align: center;
   }
 }
 
 .offWhite {
-  color: #fef6e0;
+  color: white;
 }

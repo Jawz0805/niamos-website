@@ -28,11 +28,11 @@ const ProjectPage = () => {
     <PageWrapper>
       {pageData && (
         <div className="page-inner-wrapper">
-          <PageHeadingLetters heading={pageData.title} color="#FF801F" />
+          <PageHeadingLetters heading={pageData.title} color="" />
 
           <ReactMarkdown
             source={pageData.description}
-            className="roboto markdown"
+            className="roboto markdown-white"
           />
 
           <div

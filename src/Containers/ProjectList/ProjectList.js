@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 
 const ProjectList = ({ data, setPage, scrollClick }) => {
   const [showDiv, setShowDiv] = useState("0");
-  const [visible, setVisible] = useState(false);
+  // const [visible, setVisible] = useState(false);
 
   return (
     <div className="project-list">
@@ -18,7 +18,7 @@ const ProjectList = ({ data, setPage, scrollClick }) => {
               <ProjectCard
                 data={data}
                 index={index}
-                setVisible={setVisible}
+                // setVisible={setVisible}
                 setShowDiv={setShowDiv}
                 key={data.id}
                 setPage={setPage}

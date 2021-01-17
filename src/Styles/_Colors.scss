@@ -1,8 +1,55 @@
-$Black: #0f1923;
-$Red: #ff4655;
-$Blue: #3a7ca5;
-$White: #f9f9f9;
-$Yellow: #ffe45e;
-$Purple: #88498f;
-$Turquoise: #44bba4;
-$Green: #36827f;
+// $Red: #ff4655;
+// $Blue: #3a7ca5;
+// $Yellow: #ffe45e;
+// $Purple: #352665;
+// $Turquoise: #44bba4;
+// $Green: #36827f;
+
+$primary: #352665;
+$white: #f5f5f5;
+$secondary: #06bcc1;
+$tertiary: #80727b;
+$black: #0f1923;
+$highlight: #fe9000;
+
+.bg-white {
+  background-color: $white;
+}
+.white {
+  color: $white;
+}
+
+.bg-black {
+  background-color: $black;
+}
+.black {
+  color: $black;
+}
+
+.bg-primary {
+  background-color: $primary;
+}
+.primary {
+  color: $primary;
+}
+
+.bg-secondary {
+  background-color: $secondary;
+}
+.secondary {
+  color: $secondary;
+}
+
+.bg-tertiary {
+  background-color: $tertiary;
+}
+.tertiary {
+  color: $tertiary;
+}
+
+.bg-highlight {
+  background-color: $highlight;
+}
+.highlight {
+  color: $highlight;
+}

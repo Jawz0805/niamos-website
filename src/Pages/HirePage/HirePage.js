@@ -7,14 +7,14 @@ import ReactMarkdown from "react-markdown";
 
 const HirePage = () => {
   const [pageData, setPageData] = useState();
-  const [rooms, setRooms] = useState();
+  // const [rooms, setRooms] = useState();
 
   useEffect(() => {
     getData("hire-page").then((res, err) => {
       setPageData(res);
     });
     getData("rooms").then((res, err) => {
-      setRooms(res);
+      // setRooms(res);
     });
   }, []);
 

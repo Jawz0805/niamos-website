@@ -44,10 +44,10 @@ const WhatsOn = () => {
       <div className="page-inner-wrapper">
         {pageData && (
           <div className="page-title">
-            <PageHeadingLetters heading={pageData.Title} color="#FF801F" />
+            <PageHeadingLetters heading={pageData.Title} color="" />
             <ReactMarkdown
               source={pageData.Description}
-              className="markdown roboto"
+              className="markdown-white roboto"
             />
           </div>
         )}

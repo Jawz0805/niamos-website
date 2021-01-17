@@ -29,7 +29,6 @@ const Footer = () => {
             facebook="http://www.facebook.com/niaboxoffice"
             instagram="https://www.instagram.com/niamos_mcr/"
             eMail="niamosideas@gmail.com"
-            color="#FEF6E0"
           />
         </div>
       </div>

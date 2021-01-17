@@ -1,10 +1,12 @@
+@import "../../../Styles/Colors";
+
 .nav-container {
   top: 0;
   width: 100vw;
   height: 5vh;
-  color: #0f1923;
+  color: $black;
   position: fixed;
-  background-color: #fef6e0;
+  background-color: $white;
   z-index: 1000;
   transition: 300ms;
   display: flex;

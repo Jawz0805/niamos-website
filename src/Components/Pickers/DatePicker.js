@@ -6,6 +6,7 @@ import {
   TimePicker,
   DatePicker,
 } from "@material-ui/pickers";
+import "./_Pickers.scss";
 
 const DatePickers = ({ selectedDate, setSelectedDate, ref }) => {
   // The first commit of Material-UI

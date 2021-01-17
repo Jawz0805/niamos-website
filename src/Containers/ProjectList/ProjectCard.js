@@ -12,21 +12,21 @@ const ProjectCard = ({
   setPage,
   scrollClick,
 }) => {
-  const [width, setWidth] = useState("30px");
+  // const [width, setWidth] = useState("30px");
   const [width2, setWidth2] = useState("0px");
   const [zIndex, setZIndex] = useState("0");
   const [yPos, setYPos] = useState(0);
 
-  let position = "right";
-  let flip = "flex-end";
-  if (index % 2 === 0) {
-    position = "left";
-    flip = "flex-start";
-  }
+  // let position = "right";
+  // let flip = "flex-end";
+  // if (index % 2 === 0) {
+  //   position = "left";
+  //   flip = "flex-start";
+  // }
 
   const hover = () => {
     setVisible(true);
-    setWidth("0px");
+    // setWidth("0px");
     setWidth2("100%");
     setShowDiv("1");
     setZIndex("4");
@@ -34,7 +34,7 @@ const ProjectCard = ({
   };
   const stopHover = () => {
     setVisible(false);
-    setWidth("30px");
+    // setWidth("30px");
     setWidth2("0px");
     setShowDiv("0");
     setZIndex("0");

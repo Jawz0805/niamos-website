@@ -11,7 +11,7 @@ const EventRow = ({ event, backgroundColour }) => {
       <li className="event-row-item row-item">{event.event}</li>
       <li className="event-row-item row-item">{event.venue}</li>
       <li className="event-row-item row-item">
-        <Moment format="DD - MMMM" row-item>
+        <Moment format="DD - MMMM" className="row-item">
           {event.date}
         </Moment>
       </li>
@@ -19,7 +19,7 @@ const EventRow = ({ event, backgroundColour }) => {
 
       <li className="event-row-item row-item">£{event.price}</li>
 
-      <li className={`event-row-item row-item`}>
+      <li className={"event-row-item row-item"}>
         {!event.soldOut ? (
           <a
             href={event.ticketLink}
