@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 import PageWrapper from "../../Containers/PageWrapper/PageWrapper";
 import PageHeadingLetters from "../../Components/Animation/PageHeadingLetters";
 import EventRow from "./EventRow";
-import "./WhatsOn.scss";
+import "./_WhatsOn.scss";
 import EventCategories from "./EventCategories";
 import Button from "../../Components/Button";
 

@@ -1,9 +1,8 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { motion } from "framer-motion";
-import "./Projects.scss";
+import "./_Projects.scss";
 import Button from "../../Components/Button/index";
-import { Link, useRouteMatch } from "react-router-dom";
 
 const ProjectCard = ({
   data,
@@ -58,32 +57,27 @@ const ProjectCard = ({
         handleOnClick(data);
       }}
     >
-      {/* <motion.div
-        className={`card-image-container left `}
-        style={{
-          backgroundImage: `url("${data.projectCard.displayImage.url}")`,
-          background: "cover",
-        }}
+      <motion.img
+        src={data.projectCard.displayImage.url}
+        className="card-image"
+        alt={data.projectCard.id}
         animate={{
           y: -yPos,
           transition: { ease: "easeInOut", duration: 0.5 },
         }}
-      ></motion.div> */}
-      <img
-        src={data.projectCard.displayImage.url}
-        className="card-image"
-        alt={data.projectCard.id}
-      ></img>
+      ></motion.img>
 
-      <h3 className="roboto card-title ">{data.projectCard.Title}</h3>
+      {/* <div className={`line-left`} style={{ width: width }}></div> */}
+      <h3 className="roboto card-title offWhite">{data.projectCard.Title}</h3>
       <div className="text-div">
         <ReactMarkdown
           source={data.projectCard.description}
-          className="roboto "
+          className="roboto"
           style={{ textAlign: "center" }}
         />
       </div>
       <Button text="See More" />
+      <div className="line" style={{ width: width2 }}></div>
     </motion.div>
   );
 };
