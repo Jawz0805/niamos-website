@@ -2,7 +2,7 @@ import React, { useState, useEffect, createRef } from "react";
 
 import getData from "../../Utilities/getData";
 import HomeNav from "./HomeNav";
-import "./HomePage.scss";
+import "./_HomePage.scss";
 import PageSlide from "../../Components/PageSlide/PageSlide";
 import CircleImage from "../../Components/CircleImage/CircleImage";
 import PageWrapper from "../../Containers/PageWrapper/PageWrapper";
