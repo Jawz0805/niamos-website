@@ -1,12 +1,12 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import HomePage from "../../../Pages/HomePage/HomePage";
-import About from "../../../Pages/About/About";
-import WhatsOn from "../../../Pages/WhatsOn/WhatsOn";
-import HirePage from "../../../Pages/HirePage/HirePage";
-import LoginPage from "../../../Pages/LoginPage/LoginPage";
-import ProjectPage from "../../../Pages/ProjectPage/ProjectPage";
-import ContactPage from "../../../Pages/ContactPage/ContactPage";
+import HomePage from "../Pages/HomePage/HomePage";
+import About from "../Pages/About/About";
+import WhatsOn from "../Pages/WhatsOn/WhatsOn";
+import HirePage from "../Pages/HirePage/HirePage";
+import LoginPage from "../Pages/LoginPage/LoginPage";
+import ProjectPage from "../Pages/ProjectPage/ProjectPage";
+import ContactPage from "../Pages/ContactPage/ContactPage";
 
 const PageRouter = () => {
   return (

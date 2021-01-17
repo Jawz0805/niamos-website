@@ -1,5 +1,5 @@
 import NavBar from "../Components/Navigation/NavBar/NavBar";
-import PageRouter from "../Components/Navigation/PageRouter/PageRouter";
+import PageRouter from "../PageRouter/PageRouter";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./App.scss";
 import Footer from "../Containers/Footer";
