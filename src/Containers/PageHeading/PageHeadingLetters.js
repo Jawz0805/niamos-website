@@ -1,19 +1,30 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import "./_Animation.scss";
+// import "./_Animation.scss";
 
 const HeadingLetters = ({ heading, controls, ref, styleName, color }) => {
   const [string, setString] = useState("");
-
+  const [words, setWords] = useState([]);
   useEffect(() => {
     setString(Array.from(heading));
+    // stringSplit(heading)
   }, [heading]);
 
+  // const stringSplit = (string) => {
+  //   let words = string.split(" ");
+  //   for (let i = 0; i < words.length - 1; i++) {
+  //     words[i] += " ";
+  //     console.log(1, words);
+  //   }
+  //   setWords(words);
+  //   console.log(2, words);
+  // };
+
   const containerVariants = {
-    hidden: { opacity: 0, width: 0 },
+    hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      width: "42%",
+
       transition: { staggerChildren: 0.15, duration: 0.5 },
     },
   };
@@ -39,12 +50,7 @@ const HeadingLetters = ({ heading, controls, ref, styleName, color }) => {
   };
   return (
     <AnimatePresence>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
+      <div>
         {string && (
           <motion.div
             variants={containerVariants}
@@ -54,15 +60,13 @@ const HeadingLetters = ({ heading, controls, ref, styleName, color }) => {
             background={""}
             ref={ref}
             className="page-heading-container"
+            style={{ display: "flex", flexWrap: "wrap" }}
           >
             {string.map((letter, index) => (
               <motion.span
                 key={index}
-                className="roboto bold page-heading-letters"
+                className="fredoka bold page-heading-letters"
                 width={"100%"}
-                style={{
-                  skewX: "-20deg",
-                }}
                 variants={letterVariants}
               >
                 {letter === " " ? "\u00A0" : letter}

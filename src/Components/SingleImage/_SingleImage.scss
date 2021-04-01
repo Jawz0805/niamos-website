@@ -1,0 +1,38 @@
+@import "../../Styles/GlobalVariables";
+
+.single-image-outer-container {
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+  @media screen and (max-width: $small) {
+    grid-template-columns: 1fr;
+  }
+}
+.single-image-container {
+}
+
+.single-image-title {
+  font-weight: 400;
+}
+
+.single-image {
+  max-width: 100%;
+}
+
+.single-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  min-width: 450px;
+  @media screen and (max-width: $small) {
+    min-width: auto;
+  }
+}
+.single-image-text-container {
+  padding: 5%;
+}
+
+.left {
+  flex-direction: row-reverse;
+}

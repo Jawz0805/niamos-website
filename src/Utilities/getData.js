@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const backend = "https://niamos-strapi.herokuapp.com";
+const backend = "https://niamos-website-backend.herokuapp.com";
 const getData = async (page) => {
   const data = await axios.get(`${backend}/${page}`).then(
     (res) => {

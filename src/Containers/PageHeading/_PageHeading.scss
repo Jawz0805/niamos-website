@@ -1,0 +1,35 @@
+@import "../../Styles/Colors";
+
+.page-heading {
+}
+
+.page-heading-outer-container {
+  position: relative;
+  background-color: $white;
+}
+
+.page-heading-text-container {
+  padding: 20px 10%;
+  left: 0;
+}
+
+.page-heading-container {
+  font-size: 3em;
+  color: $black;
+}
+
+.subtitle {
+  color: $gray;
+  margin: 0 0 0.2em;
+  font-size: 2.5em;
+}
+
+.page-heading-image {
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  img {
+    max-height: 100vh;
+    width: 100%;
+  }
+}

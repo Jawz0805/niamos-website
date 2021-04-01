@@ -1,44 +1,15 @@
 import React, { useState } from "react";
-import ReactMarkdown from "react-markdown";
 import { motion } from "framer-motion";
 import "./_Projects.scss";
-import Button from "../../Components/Button/index";
 
-const ProjectCard = ({
-  data,
-  index,
-  setVisible,
-  setShowDiv,
-  setPage,
-  scrollClick,
-}) => {
-  // const [width, setWidth] = useState("30px");
-  const [width2, setWidth2] = useState("0px");
-  const [zIndex, setZIndex] = useState("0");
-  const [yPos, setYPos] = useState(0);
-
-  // let position = "right";
-  // let flip = "flex-end";
-  // if (index % 2 === 0) {
-  //   position = "left";
-  //   flip = "flex-start";
-  // }
+const ProjectCard = ({ data, index, setShowDiv, setPage, scrollClick }) => {
+  const [scale, setScale] = useState(1);
 
   const hover = () => {
-    setVisible(true);
-    // setWidth("0px");
-    setWidth2("100%");
-    setShowDiv("1");
-    setZIndex("4");
-    setYPos(10);
+    setScale(1.05);
   };
   const stopHover = () => {
-    setVisible(false);
-    // setWidth("30px");
-    setWidth2("0px");
-    setShowDiv("0");
-    setZIndex("0");
-    setYPos(0);
+    setScale(1);
   };
 
   const handleOnClick = (data) => {
@@ -49,7 +20,6 @@ const ProjectCard = ({
   return (
     <motion.div
       className={`card-outer-container position-left  `}
-      style={{ zIndex: zIndex }}
       onMouseOver={() => hover()}
       onMouseLeave={() => stopHover()}
       whileTap={{ scale: 0.9 }}
@@ -57,27 +27,19 @@ const ProjectCard = ({
         handleOnClick(data);
       }}
     >
-      <motion.img
-        src={data.projectCard.displayImage.url}
-        className="card-image"
-        alt={data.projectCard.id}
-        animate={{
-          y: -yPos,
-          transition: { ease: "easeInOut", duration: 0.5 },
-        }}
-      ></motion.img>
-
-      {/* <div className={`line-left`} style={{ width: width }}></div> */}
-      <h3 className="roboto card-title offWhite">{data.projectCard.Title}</h3>
-      <div className="text-div">
-        <ReactMarkdown
-          source={data.projectCard.description}
-          className="roboto"
-          style={{ textAlign: "center" }}
-        />
+      <div className="card-image-container">
+        <motion.img
+          src={data.displayImage.url}
+          className="card-image"
+          alt={data.id}
+          animate={{ scale: scale }}
+        ></motion.img>
       </div>
-      <Button text="See More" />
-      <div className="line" style={{ width: width2 }}></div>
+      <div className="text-div">
+        <h3 className="card-title">{data.title}</h3>
+        <h4 className="card-subtitle">{data.subTitle}</h4>
+        <p className="short-description">{data.shortDescription}</p>
+      </div>
     </motion.div>
   );
 };

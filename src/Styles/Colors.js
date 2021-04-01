@@ -4,35 +4,35 @@ const orange = "#FF801F";
 // const yellowOrange = "#FBCD67";
 const yellow = "#FCCF35";
 const green = "#4B7F52";
-const blue = "#158EAE";
+const blue = "#1785c3";
 // const lightBlue = "#B6D0E4";
 const darkBlue = "#143642";
-const purple = "#352665";
+const purple = "#0f1923";
 const offBlack = "#0f1923";
 
 export const backgroundColours = [
   {
-    background: "#FEF6E0",
-    textColor: offBlack,
-  },
-  {
-    background: red,
+    background: blue,
     textColor: offWhite,
   },
   {
-    background: yellow,
-    textColor: offBlack,
-  },
-  {
-    background: orange,
-    textColor: offBlack,
-  },
-  {
-    background: darkBlue,
+    background: purple,
     textColor: offWhite,
   },
   {
-    background: green,
+    background: blue,
+    textColor: offWhite,
+  },
+  {
+    background: purple,
+    textColor: offWhite,
+  },
+  {
+    background: blue,
+    textColor: offWhite,
+  },
+  {
+    background: purple,
     textColor: offWhite,
   },
   {

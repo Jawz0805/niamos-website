@@ -1,41 +1,112 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+.bg-white {
+  background-color: #f5f5f5;
+}
+
+.white {
+  color: #f5f5f5;
+}
+
+.bg-black {
+  background-color: #353535;
+}
+
+.black {
+  color: #353535;
+}
+
+.bg-primary {
+  background-color: #352665;
+}
+
+.primary {
+  color: #352665;
+}
+
+.bg-secondary {
+  background-color: #1785c3;
+}
+
+.secondary {
+  color: #1785c3;
+}
+
+.bg-tertiary {
+  background-color: #006c67;
+}
+
+.tertiary {
+  color: #006c67;
+}
+
+.bg-highlight {
+  background-color: #fe9000;
+}
+
+.highlight {
+  color: #fe9000;
+}
+
 .roboto {
   font-family: "Roboto";
+}
+
+.fredoka {
+  font-family: "Fredoka One";
+}
+
+.fredoka a {
+  font-family: "Fredoka One";
+}
+
+.fredoka p {
+  font-family: "Fredoka One";
 }
 
 h1 {
   font-size: 3em;
   font-weight: 800;
+  font-family: "Fredoka One";
+  margin: 0;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: 300;
+  font-family: "Fredoka One";
+  margin-top: 0.3em;
 }
 
 h3 {
   font-size: 1.5em;
   font-weight: 300;
+  font-family: "Fredoka One";
+  margin-top: 0.3em;
 }
 
 h4 {
   font-size: 1.2em;
   font-weight: 400;
+  font-family: "Fredoka One";
 }
 
 h5 {
   font-size: 1.2em;
   font-weight: 600;
+  font-family: "Fredoka One";
 }
 
 h6 {
   font-size: 1em;
   font-weight: 500;
+  font-family: "Fredoka One";
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 300;
+  font-family: "Roboto";
 }
 
 .bold {
@@ -91,6 +162,51 @@ body {
   font-weight: 100;
 }
 
+.heading {
+  font-weight: 300;
+  font-size: 2.5em;
+  margin-top: 0;
+  font-family: "Fredoka One";
+}
+
+.markdown-white p {
+  color: #f5f5f5;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.markdown-white p a {
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.markdown-white h1 {
+  color: #f5f5f5;
+}
+
+.markdown-white h2 {
+  color: #f5f5f5;
+}
+
+.markdown-black p {
+  color: #353535;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.markdown-black a {
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.markdown-black h1 {
+  color: #353535;
+}
+
+.markdown-black h2 {
+  color: #353535;
+}
+
 .bg-white {
   background-color: #f5f5f5;
 }
@@ -100,11 +216,11 @@ body {
 }
 
 .bg-black {
-  background-color: #0f1923;
+  background-color: #353535;
 }
 
 .black {
-  color: #0f1923;
+  color: #353535;
 }
 
 .bg-primary {
@@ -116,19 +232,19 @@ body {
 }
 
 .bg-secondary {
-  background-color: #06bcc1;
+  background-color: #1785c3;
 }
 
 .secondary {
-  color: #06bcc1;
+  color: #1785c3;
 }
 
 .bg-tertiary {
-  background-color: #80727b;
+  background-color: #006c67;
 }
 
 .tertiary {
-  color: #80727b;
+  color: #006c67;
 }
 
 .bg-highlight {
@@ -223,42 +339,11 @@ body {
 html {
   overflow-y: auto;
   overflow-x: hidden;
+  margin: 0;
 }
 
 .page-inner-wrapper {
   margin: 10%;
-}
-
-.markdown-white p {
-  color: #f5f5f5;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-}
-
-.markdown-white h1 {
-  color: #f5f5f5;
-  text-align: center;
-}
-
-.markdown-white h2 {
-  color: #f5f5f5;
-  text-align: center;
-}
-
-.markdown p {
-  color: #0f1923;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-}
-
-.markdown h1 {
-  color: #0f1923;
-  text-align: center;
-}
-
-.markdown h2 {
-  color: #0f1923;
-  text-align: center;
 }
 
 .offWhite {

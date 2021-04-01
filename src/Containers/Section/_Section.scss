@@ -1,0 +1,23 @@
+@import "../../Styles/Colors";
+
+.even {
+  background-color: $secondary;
+}
+
+.odd {
+  background-color: $white;
+}
+
+.section-even {
+  margin-bottom: 5%;
+  // box-shadow: 100px 0 50px -4px rgba(31, 73, 125, 0.8),
+  //   -100px 0 50px -4px rgba(31, 73, 125, 0.8);
+}
+
+.section-odd {
+  margin: 0 auto;
+  margin-bottom: 5%;
+  left: 0;
+  // box-shadow: 100px 0 50px -4px rgba(31, 73, 125, 0.8),
+  //   -100px 0 50px -4px rgba(31, 73, 125, 0.8);
+}

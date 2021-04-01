@@ -1,0 +1,90 @@
+@import "../../../Styles/Colors";
+@import "../../../Styles/BreakPoints";
+
+.nav-container {
+  top: 0;
+  color: $white;
+  background-color: $secondary;
+}
+
+.nav-first-row {
+  top: 0;
+
+  color: $white;
+  display: flex;
+  height: 12vh;
+  align-items: center;
+
+  border-bottom: 1px solid $white;
+  padding: 0 10%;
+}
+
+.nav-inner-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-toggle {
+  right: 0;
+  position: fixed;
+  z-index: 3;
+  padding: 20px;
+  @media screen and(min-width: $large) {
+    display: none;
+  }
+}
+
+.nav-second-row {
+  height: 9vh;
+  color: $white;
+  background-color: $secondary;
+  padding: 0 10%;
+}
+.nav-items {
+  width: 80%;
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+}
+
+.nav-item {
+  display: flex;
+
+  align-items: center;
+  font-size: 1.1em;
+  font-weight: 600;
+  font-family: "Roboto";
+}
+
+.socials {
+  display: flex;
+}
+
+.nav-sub-item {
+  font-weight: 400;
+  padding-bottom: 5px;
+  font-size: large;
+}
+
+.nav-heading {
+  font-weight: 300;
+  font-size: 2.5em;
+  font-family: "Fredoka One";
+}
+
+@media screen and (max-width: $medium) {
+  .nav-second-row {
+    display: none;
+  }
+  .nav-items {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+  .nav-socials {
+    visibility: hidden;
+  }
+}

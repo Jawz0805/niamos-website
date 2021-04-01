@@ -1,37 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import "./Colors";
+$titleText: "Fredoka One";
+$paragraphText: "Roboto";
 
 .roboto {
-  font-family: "Roboto";
+  font-family: $paragraphText;
+}
+.fredoka {
+  font-family: $titleText;
+  a {
+    font-family: $titleText;
+  }
+  p {
+    font-family: $titleText;
+  }
 }
 
 h1 {
   font-size: 3em;
   font-weight: 800;
+  font-family: $titleText;
+  margin: 0;
 }
 h2 {
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: 300;
+  font-family: $titleText;
+  margin-top: 0.3em;
 }
 h3 {
   font-size: 1.5em;
   font-weight: 300;
+  font-family: $titleText;
+  margin-top: 0.3em;
 }
 h4 {
   font-size: 1.2em;
   font-weight: 400;
+  font-family: $titleText;
 }
 h5 {
   font-size: 1.2em;
   font-weight: 600;
+  font-family: $titleText;
 }
 h6 {
   font-size: 1em;
   font-weight: 500;
+  font-family: $titleText;
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 300;
+  font-family: $paragraphText;
 }
 
 .bold {
@@ -78,4 +101,46 @@ body {
 }
 .thin {
   font-weight: 100;
+}
+
+.heading {
+  font-weight: 300;
+  font-size: 2.5em;
+  margin-top: 0;
+  font-family: $titleText;
+}
+
+.markdown-white {
+  & p {
+    color: $white;
+    transition: 500ms;
+
+    a {
+      font-weight: 400;
+      text-decoration: underline;
+    }
+  }
+  h1 {
+    color: $white;
+  }
+  h2 {
+    color: $white;
+  }
+}
+
+.markdown-black {
+  p {
+    color: $black;
+    transition: 500ms;
+  }
+  a {
+    font-weight: 400;
+    text-decoration: underline;
+  }
+  h1 {
+    color: $black;
+  }
+  h2 {
+    color: $black;
+  }
 }

@@ -17,8 +17,10 @@ const HomePage = () => {
 
   useEffect(() => {
     getData("home-page").then((res, err) => {
-      setPageData(res);
-      setSlide(res.homePageSlide[0]);
+      if (res) {
+        setPageData(res);
+        setSlide(res.homePageSlide[0])
+      }
     });
   }, []);
 

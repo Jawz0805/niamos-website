@@ -1,14 +1,8 @@
 import React from "react";
 import PageWrapper from "../../Containers/PageWrapper/PageWrapper";
-import PageHeadingLetters from "../../Components/Animation/PageHeadingLetters";
+import PageHeading from "../../Containers/PageHeading/PageHeading";
 const ContactPage = () => {
-  return (
-    <PageWrapper>
-      <div className="page-inner-wrapper">
-        <PageHeadingLetters heading="Contact" color="#FCCF35" />
-      </div>
-    </PageWrapper>
-  );
+  return <PageWrapper>{/* <PageHeading /> */}</PageWrapper>;
 };
 
 export default ContactPage;

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Button = ({ text, link, color, onClick }) => {
   return (
     <motion.div
-      className="button roboto"
+      className="button fredoka"
       onClick={onClick}
       whileTap={{ scale: 0.95 }}
     >

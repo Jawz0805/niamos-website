@@ -18,19 +18,19 @@ const CircleImage = ({ source, offset }) => {
     },
     exit: {
       opacity: 1,
-      scale: 0.8,
+      scale: 0.9,
 
       transition: { transition: 0.5, duration: 0.3 },
     },
   };
   return (
-    <AnimatePresence exitBeforeEnter>
+    <AnimatePresence>
       <motion.img
         variants={imageVariants}
         initial="before"
         animate="after"
         exit="exit"
-        src={source.url}
+        src={source.formats.small.url}
         alt={source.id}
         className="circle-image"
         key={source.id}

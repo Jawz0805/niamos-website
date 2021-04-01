@@ -1,5 +1,5 @@
 .events-container {
-  width: 100%;
+  padding: 0 10% 2%;
   height: 100%;
   display: grid;
   grid-template-columns: 1fr;
@@ -49,4 +49,5 @@
 .filter-container {
   display: flex;
   justify-content: space-around;
+  padding: 2% 10% 0;
 }

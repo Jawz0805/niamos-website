@@ -1,46 +1,50 @@
 @import "../../Styles/Colors";
 
-.topic-container {
-  width: 100%;
-  display: flex;
-  border: 1px solid $white;
-  overflow: hidden;
-}
-
-.topic-image {
-  width: 100%;
-  height: auto;
-}
-
-.topic-grid {
-  margin-top: 2em;
-  width: 80%;
+.topic-list-container {
+  padding: 5% 10%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-rows: minmax(300px, auto);
-  column-gap: 1em;
-  row-gap: 2em;
+  row-gap: 10%;
+  margin: 0 auto;
 }
 
-.flex-right {
-  flex-direction: row;
+.topic-container {
+  height: 100%;
+  display: flex;
+  overflow: hidden;
 }
-
-.flex-left {
-  flex-direction: row-reverse;
-}
-
-.topic-text-container {
-  width: 50%;
-  padding: 0 20px 0 20px;
+.topic-grid {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: max(290px);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 1);
 }
 
 .topic-image-container {
-  width: 50%;
-  height: auto;
-  margin: auto;
+  height: 100%;
+  overflow: hidden;
   img {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
   }
+}
+
+.topic-text-container {
+  min-width: 100px;
+
+  border-radius: 10px;
+  padding: 5%;
+}
+
+.order-1 {
+  order: 1;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  justify-self: left;
+}
+.order-2 {
+  order: 2;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  justify-self: right;
 }

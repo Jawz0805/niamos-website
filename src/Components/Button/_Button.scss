@@ -1,6 +1,6 @@
 @import "../../Styles/Colors";
 
-$base: $black;
+$base: $base;
 $white: $white;
 $pink: $highlight;
 $height: 54px;
@@ -24,6 +24,7 @@ div .button {
     box-shadow: 0 0 0 1px inset rgba($white, 0.3);
     position: relative;
     margin: 10px 0;
+
     &.white:hover > p {
       color: $white;
     }

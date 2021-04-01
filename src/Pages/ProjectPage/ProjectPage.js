@@ -2,9 +2,8 @@ import React, { useEffect, useState, useRef } from "react";
 import PageWrapper from "../../Containers/PageWrapper/PageWrapper";
 import getData from "../../Utilities/getData";
 import ProjectList from "../../Containers/ProjectList/ProjectList";
-import PageHeadingLetters from "../../Components/Animation/PageHeadingLetters";
-import ReactMarkdown from "react-markdown";
 import Topic from "../../Components/Topic/Topic";
+import PageHeading from "../../Containers/PageHeading/PageHeading";
 
 const ProjectPage = () => {
   const [pageData, setPageData] = useState();
@@ -19,38 +18,25 @@ const ProjectPage = () => {
   const scrollClick = () => {
     window.scrollTo({
       behavior: "smooth",
-      top: ref.current.offsetTop - 100,
+      top: ref.current.offsetTop - 0,
     });
   };
 
   let ref = useRef();
-  return (
+  return pageData ? (
     <PageWrapper>
-      {pageData && (
-        <div className="page-inner-wrapper">
-          <PageHeadingLetters heading={pageData.title} color="" />
+      <PageHeading text={pageData} />
 
-          <ReactMarkdown
-            source={pageData.description}
-            className="roboto markdown-white"
-          />
-
-          <div
-            style={{
-              marginTop: "50px",
-            }}
-          >
-            <ProjectList
-              data={pageData.project}
-              setPage={setPage}
-              scrollClick={scrollClick}
-            />
-          </div>
-          <div ref={ref}></div>
-          <Topic page={page}></Topic>
-        </div>
-      )}
+      <ProjectList
+        data={pageData.project}
+        setPage={setPage}
+        scrollClick={scrollClick}
+      />
+      <div ref={ref}></div>
+      <Topic page={page}></Topic>
     </PageWrapper>
+  ) : (
+    <></>
   );
 };
 
