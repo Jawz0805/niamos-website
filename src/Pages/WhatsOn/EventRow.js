@@ -22,7 +22,7 @@ const EventRow = ({ event, backgroundColour }) => {
       <li className={"event-row-item row-item"}>
         {!event.soldOut ? (
           <a
-            href={event.ticketLink}
+            href={`https://${event.ticketLink}`}
             target="_blank"
             rel="noreferrer"
             className="ticket-link ticket"
@@ -30,8 +30,8 @@ const EventRow = ({ event, backgroundColour }) => {
             Get Tickets
           </a>
         ) : (
-          <span className={` ticket-link ticket ${soldOut}`}>Sold Out</span>
-        )}
+            <span className={` ticket-link ticket ${soldOut}`}>Sold Out</span>
+          )}
       </li>
     </ul>
   );
